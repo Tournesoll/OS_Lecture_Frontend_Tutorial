@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的前端学习网站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>前端学习中心</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#basics">基础学习</a></li>
+                <li><a href="#advanced">进阶学习</a></li>
+                <li><a href="#projects">实战项目</a></li>
+                <li><a href="#resources">资源推荐</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="banner">
+        <div class="container">
+            <h2>欢迎来到前端学习中心</h2>
+            <p>从基础到进阶，助你成为优秀的前端开发者</p>
+
+            <!-- 搜索框 -->
+            <div class="search-box">
+                <input type="text" placeholder="搜索学习资源... 例如: HTML基础, CSS布局, Vue项目" id="searchInput">
+                <button onclick="performSearch()">搜索</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 基础学习 -->
+    <section id="basics" class="section">
+        <div class="container">
+            <h2>基础学习 - HTML/CSS/JavaScript</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon html-icon">HTML</div>
+                    <h3>HTML 入门教程</h3>
+                    <p>学习HTML的基本结构、标签和语义化，构建网页的基础骨架。</p>
+                    <div class="card-links">
+                        <a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML" target="_blank">MDN教程</a>
+                        <a href="https://www.w3school.com.cn/html/index.asp" target="_blank">W3School</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon css-icon">CSS</div>
+                    <h3>CSS 样式设计</h3>
+                    <p>掌握CSS选择器、布局、动画和响应式设计，让网页更美观。</p>
+                    <div class="card-links">
+                        <a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS" target="_blank">MDN教程</a>
+                        <a href="https://www.w3school.com.cn/css/index.asp" target="_blank">W3School</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon js-icon">JS</div>
+                    <h3>JavaScript 编程</h3>
+                    <p>学习JavaScript语法、DOM操作、事件处理和异步编程。</p>
+                    <div class="card-links">
+                        <a href="https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript" target="_blank">MDN教程</a>
+                        <a href="https://www.runoob.com/js/js-tutorial.html" target="_blank">菜鸟教程</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 进阶学习 -->
+    <section id="advanced" class="section bg-light">
+        <div class="container">
+            <h2>进阶学习 - Vue框架</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon vue-icon">Vue</div>
+                    <h3>Vue 基础入门</h3>
+                    <p>学习Vue的核心概念，包括组件、指令、响应式数据等。</p>
+                    <div class="card-links">
+                        <a href="https://cn.vuejs.org/guide/introduction.html" target="_blank">Vue官方文档</a>
+                        <a href="https://www.vue3js.cn/docs/zh/guide/introduction.html" target="_blank">Vue3中文文档</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon vuex-icon">Vuex</div>
+                    <h3>Vuex 状态管理</h3>
+                    <p>掌握Vuex的使用，管理复杂应用的状态。</p>
+                    <div class="card-links">
+                        <a href="https://vuex.vuejs.org/zh/" target="_blank">Vuex官方文档</a>
+                        <a href="https://www.vue3js.cn/docs/zh/guide/state-management.html" target="_blank">Vue3状态管理</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon vue-router-icon">Vue Router</div>
+                    <h3>Vue Router 路由</h3>
+                    <p>学习Vue Router的配置和使用，实现单页应用的路由管理。</p>
+                    <div class="card-links">
+                        <a href="https://router.vuejs.org/zh/" target="_blank">Vue Router官方文档</a>
+                        <a href="https://www.vue3js.cn/docs/zh/guide/router.html" target="_blank">Vue3路由</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 实战项目 -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>实战项目推荐</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>个人博客系统</h3>
+                    <p>使用HTML/CSS/JS或Vue构建一个简单的个人博客，包含文章列表、详情页和评论功能。</p>
+                    <a href="#" class="project-link">查看教程</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>待办事项应用</h3>
+                    <p>实现一个功能完整的待办事项应用，支持添加、删除、标记完成等操作。</p>
+                    <a href="#" class="project-link">查看教程</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>响应式电商网站</h3>
+                    <p>使用Vue和CSS Grid/Flexbox构建一个响应式的电商网站首页。</p>
+                    <a href="#" class="project-link">查看教程</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>天气查询应用</h3>
+                    <p>调用天气API，实现一个能够查询实时天气的单页应用。</p>
+                    <a href="#" class="project-link">查看教程</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 资源推荐 -->
+    <section id="resources" class="section bg-light">
+        <div class="container">
+            <h2>优质资源推荐</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>GitHub Trending</h3>
+                    <p>发现当下最热门的前端项目，学习优秀的代码实践。</p>
+                    <ol>
+                        <li>打开GitHub官网</li>
+                        <li>点击左上角菜单</li>
+                        <li>选择"Explore"</li>
+                        <li>找到"Trending"板块</li>
+                        <li>筛选"JavaScript"或"Frontend"分类</li>
+                    </ol>
+                    <a href="https://github.com/trending" target="_blank" class="resource-link">访问GitHub Trending</a>
+                </div>
+
+                <div class="resource-card">
+                    <h3>HelloGitHub</h3>
+                    <p>发现有趣的开源项目，适合初学者的前端入门项目集合。</p>
+                    <a href="https://hellogithub.com/" target="_blank" class="resource-link">访问HelloGitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 我的前端学习网站. 持续更新中...</p>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的搜索功能
+        function performSearch() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const sections = document.querySelectorAll('.section');
+
+            if (!searchTerm) {
+                alert('请输入搜索内容！');
+                return;
+            }
+
+            // 这里可以扩展更复杂的搜索逻辑
+            alert('搜索关键词: "' + searchTerm + '"\n\n功能开发中，敬请期待！');
+        }
+
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
